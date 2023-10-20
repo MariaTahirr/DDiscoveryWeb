@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<script src="https://kit.fontawesome.com/709210b3e4.js" crossorigin="anonymous"></script>
+	<!---custom css link---->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Drug Discovery Partners</title>
+
+</head>
+
+<body>
+	<!------Header Section------>
+	<header>
+		<!-- <a href="#" class="logo">Devlo<span>pe</span>r..</a> -->
+		<a href="index.html" class="logo">Drug Discovery Partners</a>
+		<ul class="navlist">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="who.html" class="active">Who</a></li>
+			<li><a href="what.html">What</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		<div class="toggle_btn">
+			<i class="fas fa-bars"></i>
+		</div>
+
+		<div class="dropdown_menu">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="who.html" class="active">Who</a></li>
+			<li><a href="what.html">What</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</div>
+	</header>
+
+
+
+
+	    <!-- who Section -->
+		<section class="testimonial" id="who">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="testimonial_slider">
+							<div class="testimonial_item">
+								<img src="img/224.png" class="testimonial_img"alt="image">
+								<h3>Ganesh Iyer, PhD</h3>
+								<p>
+									<i class="fa fa-quote-left"></i>
+									Ganesh Iyer has been active in the drug discovery space for over 20 years. He has valuable experience in assay development and HTS during his stints at Vertex Pharm, Warp Drive Bio, Lifemine Therapeutics and Alkermes. He was the head of Biology at a NewCo that he helped co-found at RA Ventures.
+									<i class="fa fa-quote-right"></i>
+								</p>
+							</div>
+						</div>
+					</div>
+						<div class="section_title">
+							<h2>We specialize in providing expert biotech consultancy services in the field of drug discovery in multiple therapeutic areas. Founded by Ganesh Iyer, we are committed to a range of consulting services, including target identification, compound screening, lead optimization, and more. Our expertise can guide your drug discovery process.</h2>
+						</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+	<!---------End Section---------->
+	<section class="end"style="background: white;">
+		<div class="last-text">
+			<p style="color: #00458B;">Made with Xara</p>
+		</div>
+		<div class="contact-icons">
+			<a href="https://www.xara.com/"><i class='bx bxl-facebook'style="color: #00458B;"></i></a>
+            <a href="https://www.xara.com/"><i class='fa-brands fa-google-plus-g'style="color: #00458B;"></i></a>  
+			<a href="https://www.xara.com/"><i class='bx bxl-twitter'style="color: #00458B;"></i></a>
+			<a href="https://www.xara.com/"><i class='bx bxl-instagram-alt'style="color: #00458B;"></i></a>
+			<a href="https://www.xara.com/"><i class='bx bxl-youtube'style="color: #00458B;"></i></a>
+		</div>
+		<div class="top">
+			<a href="#who"><i class='bx bx-up-arrow-alt'style="background: #00458B; color:white"></i></a>
+		</div>
+	</section>
+
+
+	<script>
+		const toggleBtn = document.querySelector('.toggle_btn')
+		const toggleBtnIcon = document.querySelector('.toggle_btn i')
+		const dropDownMenu = document.querySelector('.dropdown_menu')
+		toggleBtn.onclick = function () {
+			dropDownMenu.classList.toggle('open')
+			const isOpen = dropDownMenu.classList.contains('open')
+
+			toggleBtnIcon.classList = isOpen
+				? 'fas fa-xmark'
+				: 'fas fa-bars'
+		}
+	</script>
+
+
+</body>
+
+</html>
+
